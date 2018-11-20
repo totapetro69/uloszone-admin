@@ -39,15 +39,44 @@
                     <li>
                         <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
-                    <li class="menu-title">UI elements</li><!-- /.menu-title -->
+                    <li class="menu-title">Fitur</li><!-- /.menu-title -->
                     
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Transaksi</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>User</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="order.html">Order</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="order2.html">All Order Done</a></li>
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="user.html">Merchant</a></li>
+                            <li><i class="menu-icon ti-themify-logo"></i><a href="user.html">Customer</a></li>
                         </ul>
                     </li>
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Product</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-table"></i><a href="produk.html">Ulos</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Banner</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-table"></i><a href="banner-list.html">List of Banner</a></li>
+                            <li><i class="fa fa-table"></i><a href="banner-create.html">Create Banner</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="menu-title">Penjualan</li><!-- /.menu-title -->
+
+                    <li class="menu-item-has-children active dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Transaksi</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-table"></i><a href="user.html">New Order</a></li>
+                            <li><i class="fa fa-table"></i><a href="user.html">All order done</a></li>
+                        </ul>
+                    </li>
+
+                    
                     
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -64,7 +93,10 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand" href="./">
+                        <h2>UlosZone</h2>
+                        <!-- <img src="images/logo.png" alt="Logo"> -->
+                    </a>
                     <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>
@@ -151,11 +183,8 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa-user"></i>My Profile</a>
+                            <a class="nav-link" href="profile-admin.html"><i class="fa fa-user"></i>My Profile</a>
 
-                            <a class="nav-link" href="#"><i class="fa fa-bell-o"></i>Notifications <span class="count">13</span></a>
-
-                            <a class="nav-link" href="#"><i class="fa fa-cog"></i>Settings</a>
 
                             <a class="nav-link" href="#"><i class="fa fa-power-off"></i>Logout</a>
                         </div>
@@ -171,7 +200,7 @@
                     <div class="col-sm-4">
                         <div class="page-header float-left">
                             <div class="page-title">
-                                <h1>Transaction</h1>
+                                <h1>Order</h1>
                             </div>
                         </div>
                     </div>
@@ -181,7 +210,7 @@
                                 <ol class="breadcrumb text-right">
                                     <li><a href="#">Dashboard</a></li>
                                     <li><a href="#">Transaction</a></li>
-                                    <li class="active">Order</li>
+                                    <li class="active">New Order</li>
                                 </ol>
                             </div>
                         </div>
@@ -197,31 +226,31 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <strong class="card-title">Data Merchant</strong>
+                                <strong class="card-title">Data Pesanan</strong>
                             </div>
                             <div class="card-body">
                                 <table id="bootstrap-data-table" class="table table-striped table-bordered">
-                                   <thead>
+                                    <thead>
                                         <tr>
-                                            <th>Nama Pemesan</th>
+                                            <th>Customer</th>
                                             <th>Produk</th>
                                             <th>Jumlah</th>
                                             <th>Total harga</th>
                                             <th>Tanggal</th>
-                                            <th colspan="2">Action</th>
+                                            <th colspan="1">Action</th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Tota</td>
-                                            <td>Ulos Ajaib</td>
-                                            <td>1</td>
-                                            <td>IDR 200000</td>
-                                            <td>20 November 2018</td>
+                                            <td>Edu</td>
+                                            <td>Ragi hotang</td>
+                                            <td>4</td>
+                                            <td>Rp400000</td>
+                                            <td>10 November 2018</td>
                                             <td colspan="2">
-                                                <a href="#"><button type="button" class="btn btn-primary btn-sm">Confirm</button></a>
-                                                <a href="#"><button type="button" class="btn btn-danger btn-sm">Reject</button></a>
+                                                <a href="order-detail.html"><button type="button" class="btn btn-primary btn-sm">Detail</button></a>
+                                                <a href="#"><button type="button" class="btn btn-success btn-sm">Confirm</button></a>
                                             </td>
                                         </tr>
                                   
